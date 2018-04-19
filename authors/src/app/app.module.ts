@@ -10,8 +10,6 @@ import { EditComponent } from './edit/edit.component';
 import { HttpService } from './http.service';
 import { ViewQuoteComponent } from './view-quote/view-quote.component';
 import { NewQuoteComponent } from './new-quote/new-quote.component';
-
-
 @NgModule({
   declarations: [
     AppComponent,

@@ -1,5 +1,5 @@
 <p>
-  <button>Home</button>
+  <a [routerLink]="['/all']">Home</a>
  <a [routerLink]="['/write/' + author._id]">Add Quote</a>
 </p>
 <table>
@@ -12,7 +12,7 @@
   </tr>
   <tr *ngFor="let quote of author.quotes">
     <td>{{ quote.quote }}</td>
-    <td>{{ quote.vote }}</td>
+    <td>{{ quote.createVote }}</td>
     <td>
       <button>Vote Up</button>
       <button>Vote Down</button>

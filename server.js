@@ -104,8 +104,8 @@ app.delete('/remove/:id',function(req,res){
     })
 })
 
-app.get('/:id',function(req,res){
-    Author.findOne({_id: req.params.id},function(err,task){
+app.get('/author/:id',function(req,res){
+    Author.findOne({_id: req.params.id},function(err,author){
         if(err){
             console.log(err)
             res.json({message: "ERROR IS HERE",error: author})
