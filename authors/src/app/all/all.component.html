@@ -1,0 +1,13 @@
+<p>
+    <button class = "btn btn-info" (click)="addAuthor()"> Add an Author </button>
+  <!-- <button [routerLink]="['/new']">Add An Author</button> -->
+</p>
+<div *ngFor="let author of authors">
+  <tr>Name: {{ author.name }}</tr>
+  
+  <tr>Actions Avaliable:
+    <button class = "btn btn-info" (click)="viewQuote(author)">View Quote</button>
+    <button class="btn btn-info" (click)="editAuthor(author)"> Edit </button>
+    <button class="btn btn-info" (click)="deleteAuthor(author)"> Delete </button>
+  </tr> 
+  </div>

@@ -1,0 +1,13 @@
+<p>
+  new works!
+
+  HEY
+</p>
+<p><button [routerLink]="['/all']">Home</button></p>
+
+  <p>{{error}}</p>
+
+<form>
+  <input type="text" name ="newAuthor"[(ngModel)]="newAuthorInput" class='form-control'>
+</form>
+<button (click) ="createAuthorButton()">Create</button>

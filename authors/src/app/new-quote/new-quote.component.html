@@ -1,0 +1,9 @@
+<a [routerLink]="['']">Home</a>
+<p>{{ newQuote | json }}</p>
+<p *ngIf="(error)">{{error}}</p>
+<form>
+    <input type="text" name ="newquote.quote"[(ngModel)]="newQuote.quote" class='form-control'>
+  </form>
+  <button (click) ="cancelButton()">Cancel</button>
+  <button (click) ="createQuoteButton()">Create Quote</button>
+  
